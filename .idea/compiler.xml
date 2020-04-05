@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="TicketsSale.TickertsSaleModel.main" target="1.8" />
+      <module name="TicketsSale.TickertsSaleModel.test" target="1.8" />
+      <module name="TicketsSale.TicketSaleNetworking.main" target="1.8" />
+      <module name="TicketsSale.TicketSaleNetworking.test" target="1.8" />
+      <module name="TicketsSale.TicketsSaleClientFX.main" target="1.8" />
+      <module name="TicketsSale.TicketsSaleClientFX.test" target="1.8" />
+      <module name="TicketsSale.TicketsSaleClientJavaFX.main" target="1.8" />
+      <module name="TicketsSale.TicketsSaleClientJavaFX.test" target="1.8" />
+      <module name="TicketsSale.TicketsSaleService.main" target="1.8" />
+      <module name="TicketsSale.TicketsSaleService.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

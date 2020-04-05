@@ -1,0 +1,17 @@
+# Project exclude paths
+/.gradle/
+/build/
+/TicketSaleValidators/build/
+/TicketSaleValidators/build/classes/java/main/
+/TicketsSaleClient/build/
+/TicketsSaleClient/build/classes/java/main/
+/TicketsSaleModel/build/
+/TicketsSaleModel/build/classes/java/main/
+/TicketsSaleNetworking/build/
+/TicketsSaleNetworking/build/classes/java/main/
+/TicketsSalePersistance/build/
+/TicketsSalePersistance/build/classes/java/main/
+/TicketsSaleServer/build/
+/TicketsSaleServer/build/classes/java/main/
+/TicketsSaleServices/build/
+/TicketsSaleServices/build/classes/java/main/

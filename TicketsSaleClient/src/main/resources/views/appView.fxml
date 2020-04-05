@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="parent" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="AppCtrl">
+  <children>
+    <Label id="title" alignment="CENTER" layoutX="14.0" layoutY="34.0" prefHeight="56.0" prefWidth="772.0" text="TICKETS SALE MANAGER">
+      <font>
+        <Font size="35.0" />
+      </font>
+      <stylesheets>
+        <URL value="@../css/mainApp.css" />
+      </stylesheets>
+    </Label>
+    <HBox alignment="CENTER" layoutX="104.0" layoutY="450.0" prefHeight="47.0" prefWidth="592.0" spacing="10.0">
+      <children>
+        <Label alignment="CENTER" text="Name:">
+          <stylesheets>
+            <URL value="@../css/mainApp.css" />
+          </stylesheets>
+        </Label>
+        <TextField fx:id="name" prefWidth="97.0">
+          <stylesheets>
+            <URL value="@../css/mainApp.css" />
+          </stylesheets>
+        </TextField>
+        <Separator orientation="VERTICAL" prefHeight="47.0" prefWidth="43.0" />
+        <Label text="Number of tickets:">
+          <stylesheets>
+            <URL value="@../css/mainApp.css" />
+          </stylesheets>
+        </Label>
+        <TextField fx:id="tickets" prefWidth="97.0" />
+      </children>
+    </HBox>
+    <HBox alignment="CENTER" layoutX="104.0" layoutY="498.0" prefHeight="73.0" prefWidth="592.0" spacing="10.0">
+      <children>
+        <Button id="sale" mnemonicParsing="false" onAction="#makeSaleAction" prefHeight="47.0" prefWidth="243.0" text="Make Sale">
+          <font>
+            <Font name="System Bold" size="20.0" fx:id="x1" />
+          </font>
+          <stylesheets>
+            <URL value="@../css/mainApp.css" />
+          </stylesheets>
+        </Button>
+        <Button id="clear" font="$x1" mnemonicParsing="false" onAction="#clearAction" prefHeight="47.0" prefWidth="225.0" text="Clear Data">
+          <stylesheets>
+            <URL value="@../css/mainApp.css" />
+          </stylesheets>
+        </Button>
+      </children>
+    </HBox>
+    <TableView fx:id="gameList" focusTraversable="false" layoutX="91.0" layoutY="126.0" prefHeight="324.0" prefWidth="618.0" visible="true">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="55.0" resizable="false" sortable="false" text="ID">
+          <cellValueFactory>
+            <PropertyValueFactory property="id" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="120.0" resizable="false" sortable="false" text="HomeTeam">
+          <cellValueFactory>
+            <PropertyValueFactory property="homeTeam" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="123.0" resizable="false" sortable="false" text="AwayTeam">
+          <cellValueFactory>
+            <PropertyValueFactory property="awayTeam" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="113.0" resizable="false" sortable="false" text="Date">
+          <cellValueFactory>
+            <PropertyValueFactory property="gameDate" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="104.0" resizable="false" sortable="false" text="Price">
+          <cellValueFactory>
+            <PropertyValueFactory property="price" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" resizable="false" sortType="DESCENDING" sortable="false" text="Tickets">
+          <cellValueFactory>
+            <PropertyValueFactory property="ticketsAvailable" />
+          </cellValueFactory>
+        </TableColumn>
+      </columns>
+      <stylesheets>
+        <URL value="@../css/mainApp.css" />
+      </stylesheets>
+    </TableView>
+  </children>
+  <stylesheets>
+    <URL value="@../css/mainApp.css" />
+  </stylesheets>
+</AnchorPane>

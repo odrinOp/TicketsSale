@@ -1,0 +1,39 @@
+#password{
+    -fx-background-color: #aebbd1;
+    -fx-prompt-text-fill: white;
+    -fx-border-width: 0px 0 1px 0;
+    -fx-border-color: white;
+    -fx-text-fill: #faf4ff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+#username{
+    -fx-prompt-text-fill: white;
+    -fx-background-color: #aebbd1;
+    -fx-border-width: 0px 0 1px 0;
+    -fx-border-color: white;
+    -fx-text-fill: #faf4ff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+
+}
+
+#parent{
+    -fx-background-color: #aebbd1;
+}
+
+#title{
+    -fx-text-fill: #395380;
+    -fx-font-weight: bold;
+}
+
+#login{
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+}
+
+#login:hover{
+    -fx-background-color: #af7a15;
+
+}
